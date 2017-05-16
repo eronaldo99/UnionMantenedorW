@@ -7,7 +7,6 @@ namespace UnionMantenedorW.Clases
 {
     public class cDatos
     {
-    
         public static string ArchivosDirectorioPublico()
         {
             return System.Configuration.ConfigurationManager.AppSettings["ArchivosDirectorioPublico"];
