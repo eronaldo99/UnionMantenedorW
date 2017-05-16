@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mpLogin.Master.cs" Inherits="UnionMantenedorW.Login.mpLogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/imag/favicon.ico" rel="shortcut icon" />
+	<link type="image/x-icon" href="/imag/favicon.ico" rel="icon" />
+	<title>EKASISTEMA</title>
+	<link href="css/login.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+<form id="form1" runat="server">
+<ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true"  > </ajaxToolkit:ToolkitScriptManager>
+	  
+<div id="login">	  
+
+	<div id="banner">
+		<img src="imag/logo_ekatour.png" alt="EKASISTEMA" width="61" height="48" border="0" align="left" class="banner_ekasistema" /> <img src="imag/grafico_sistema_gestion_interna.png" alt="Administrador General del Sistema" border="0" align="left" class="banner_cms" />
+	</div>
+  
+  
+<div id="acceso">
+          <asp:UpdatePanel ID="UpdatePanelContent" UpdateMode="Conditional" runat="server">
+            <ContentTemplate>
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+            </ContentTemplate>
+              <Triggers>
+              </Triggers>
+          </asp:UpdatePanel>
+      <!--corrije layout--><br />
+    </div>
+     
+	 
+</div>	 
+	 
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.accordion.js"></script>
+</form>
+</body>
+</html>
